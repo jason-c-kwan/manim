@@ -155,7 +155,7 @@ class CoordinateSystem(ABC):
         index: int,
         point: Vect3,
         line_func: Type[T] = DashedLine,
-        color: ManimColor = GREY_A,
+        color: ManimColor = BLACK,
         stroke_width: float = 2
     ) -> T:
         axis = self.get_axis(index)
@@ -566,7 +566,7 @@ class ThreeDAxes(Axes):
 
 class NumberPlane(Axes):
     default_axis_config: dict = dict(
-        stroke_color=WHITE,
+        stroke_color=BLACK,
         stroke_width=2,
         include_ticks=False,
         include_tip=False,
